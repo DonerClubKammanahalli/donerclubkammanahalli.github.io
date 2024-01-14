@@ -15,62 +15,64 @@
             text-align: center;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-        h1 {
-            font-size: 36px;
-        }
+h1 {
+    font-size: 36px;
+}
 
-        .cta-container {
-            display: flex;
-            flex-direction: column;
-            margin-top: 60%; /* 60% from the top */
-        }
+.cta-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60%; /* 60% from the top */
+}
 
-        .cta-button {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 15px 30px;
-            font-size: 18px;
-            text-decoration: none;
-            color: #ff5733;
-            background-color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
-            margin-bottom: 15px;
-        }
+.cta-button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ff5733;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-        .cta-button:hover {
-            background-color: #ff5733;
-            color: #fff;
-        }
+.cta-button:not(:last-child) {
+    margin-right: 15px;
+}
 
-        .cta-icon {
-            margin-left: 10px;
-        }
-        
-        @media(max-width: 600px) {
-            h1 {
-                font-size: 28px;
-            }
+.cta-button:hover {
+    background-color: #ff5733;
+    color: #fff;
+}
 
-            .cta-button {
-                font-size: 16px;
-            }
-        }
+.cta-icon {
+    margin-left: 10px;
+}
+
+@media(max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+    }
+}
     </style>
 </head>
     
