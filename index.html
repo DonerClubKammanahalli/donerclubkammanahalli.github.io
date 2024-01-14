@@ -9,7 +9,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url('images/donerclubheromin.jpg'); /* Add the path to your background image */
+            background-image: url('images/donerclubhero.jpg'); /* Add the path to your background image */
             background-size: cover;
             background-position: center;
             font-family: 'Arial', sans-serif;
@@ -33,11 +33,18 @@
             font-size: 36px;
         }
 
+        .announcement {
+            font-size: 24px;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+            margin-bottom: 20px;
+        }
+
         .cta-container {
             display: flex;
             flex-wrap: wrap; /* Allow CTAs to wrap to the next line on small screens */
-            justify-content: center; /* Center the CTAs */
-            margin-top: 60%; /* 60% from the top */
+            justify-content: space-between; /* Spread CTAs evenly across the container */
+            margin-top: 10%; /* Adjust the top margin */
         }
 
         .cta-button {
@@ -71,6 +78,10 @@
             margin-left: 10px;
         }
 
+        .visit-us {
+            flex-basis: 100%; /* Full width for the 'Visit us' CTA */
+        }
+
         @media(max-width: 600px) {
             h1 {
                 font-size: 28px;
@@ -79,6 +90,10 @@
             .cta-button {
                 font-size: 16px;
             }
+
+            .announcement {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
@@ -86,6 +101,7 @@
 <body>
     <div class="container">
         <h1>Doner Club</h1>
+        <div class="announcement">DÖNER CLUB IS NOW IN KAMMANAHALLI!!<br/><span style="color: #fff; text-shadow: 2px 2px 4px #000;">NOW IN KAMMANHALLI</span></div>
         <div class="cta-container">
             <a href="https://www.swiggy.com/direct/brand/22191?source=swiggy-direct&subSource=instagram" class="cta-button" target="_blank">
                 <span>Order On Swiggy</span>
@@ -96,8 +112,11 @@
                 <img src="images/zomatologo.png" alt="Zomato Icon" class="cta-icon">
             </a>
             <a href="https://wa.me/c/919663398444" class="cta-button" target="_blank">
-                <span>Takeaway</span>
+                <span>Order On Takeaway</span>
                 <img src="images/whatsapplogo.png" alt="Takeaway Icon" class="cta-icon">
+            </a>
+            <a href="#" class="cta-button visit-us" target="_blank">
+                <span>Visit us</span>
             </a>
         </div>
     </div>
