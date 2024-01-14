@@ -62,7 +62,7 @@
             flex: 1; /* Distribute available space equally among the CTAs */
             box-sizing: border-box; /* Include padding and border in the width calculation */
             max-width: 375px; /* Limit the maximum width of each CTA */
-            margin: 10px; /* Add some space between CTAs */
+            margin: 10px 0; /* Add some space between CTAs */
             display: flex;
             align-items: center;
             padding: 15px 30px;
@@ -74,10 +74,6 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s, color 0.3s;
-        }
-
-        .cta-button:not(:last-child) {
-            margin-right: 15px;
         }
 
         .cta-button:hover {
